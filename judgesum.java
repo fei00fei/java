@@ -1,30 +1,30 @@
-package firstcode;//ÓĞÕâÌõÓï¾äÊ±£¬cmdµÄ²Ù×÷ĞèÒª¸Ä±ä
-import java.util.Scanner;//ÊäÈëĞèÒªµÄ°ü
+package firstcode;//æœ‰è¿™æ¡è¯­å¥æ—¶ï¼Œcmdçš„æ“ä½œéœ€è¦æ”¹å˜
+import java.util.Scanner;//è¾“å…¥éœ€è¦çš„åŒ…ã€‚
 
 public class judgesum {
 	public static void main(String[] args) {
-		Scanner input=new Scanner(System.in);//inputÎª¶ÔÏó Ğ´µÄÊ±ºò¿ÉÒÔÏÈ¼ÓÕâÌõÓï¾ä
+		Scanner input=new Scanner(System.in);//inputä¸ºå¯¹è±¡ å†™çš„æ—¶å€™å¯ä»¥å…ˆåŠ è¿™æ¡è¯­å¥
 		int num1,num2,result,getnum;
-		num1=(int)(Math.random()*100);//intĞèÒªÀ¨ºÅ£¬½ö½öÖ»×ª»»¿¿½üËûµÄÊı×Ö
+		num1=(int)(Math.random()*100);//intéœ€è¦æ‹¬å·ï¼Œä»…ä»…åªè½¬æ¢é è¿‘ä»–çš„æ•°å­—
 		num2=(int)(Math.random()*100);
 		result=num1+num2;
 		boolean judge=false;
-		System.out.printf("ÇëÊäÈë%d+%dµÄ½á¹û:",num1,num2);  // ¸ñÊ½»¯ÊäÈëÓÃprintf
-//		System.out.print("ÇëÊäÈënum1+num2µÄ½á¹û:"+num1+num2);printºÍprintlnÒ»Ñù¶¼ÊÇÓÃ+À´Æ´½ÓÊä³ö
-		getnum=input.nextInt();//input.next()¿ÉÒÔÊäÈë×Ö·û´®
+		System.out.printf("è¯·è¾“å…¥%d+%dçš„ç»“æœ:",num1,num2);  // æ ¼å¼åŒ–è¾“å…¥ç”¨printf
+//		System.out.print("è¯·è¾“å…¥num1+num2çš„ç»“æœ:"+num1+num2);printå’Œprintlnä¸€æ ·éƒ½æ˜¯ç”¨+æ¥æ‹¼æ¥è¾“å‡º
+		getnum=input.nextInt();//input.next()å¯ä»¥è¾“å…¥å­—ç¬¦ä¸²
 		if(getnum==result) {
-			System.out.println("¹§Ï²Äã´ğ¶ÔÁË");
+			System.out.println("æ­å–œä½ ç­”å¯¹äº†");
 			judge=true;
 		}
 		for(;!judge;) {
-			System.out.print("±§Ç¸Äã´ğ´íÁË£¬ÇëÖØĞÂÊäÈë:");
+			System.out.print("æŠ±æ­‰ä½ ç­”é”™äº†ï¼Œè¯·é‡æ–°è¾“å…¥:");
 			getnum=input.nextInt();
 			if(getnum==result) {
-				System.out.println("¹§Ï²Äã´ğ¶ÔÁË");
+				System.out.println("æ­å–œä½ ç­”å¯¹äº†");
 				judge=true;
 			}
 		}
-		input.close();//·ÀÖ¹³öÏÖ¾¯¸æ£ºÃ»¹Ø±Õ
+		input.close();//é˜²æ­¢å‡ºç°è­¦å‘Šï¼šæ²¡å…³é—­
 			
 	}
 	
